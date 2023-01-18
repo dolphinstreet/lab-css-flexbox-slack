@@ -21,6 +21,10 @@ body {
     overflow-x: hidden;
 }
 
+html{
+    overflow-x: hidden;
+}
+
 h1 {
     font-weight:600;
     text-align: center;
@@ -72,8 +76,7 @@ header{
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
-    
+    justify-content: center;   
 }
 
 p b {
@@ -143,7 +146,7 @@ p b {
 
 .clients div {
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     flex-wrap: wrap;
     gap: 1rem;
 }
@@ -162,7 +165,7 @@ p b {
 
 
 .card{
-    padding: 0 1rem;
+    padding: 0 2rem;
     margin-bottom: 2.5rem;
 
 }
@@ -191,7 +194,7 @@ a{
 .inverted{
     order:2;
 }
-.green-img{
+.right-img{
     align-self: flex-end;
 }
 
@@ -284,7 +287,7 @@ a{
 
 footer {
     justify-content: space-around;
-    padding: 0 1rem 2rem 1rem;
+    padding: 0 2rem 2rem 2rem;
     
 }
 footer *{
@@ -367,3 +370,120 @@ footer hr{
     font-size: 0.7rem;
 }
 
+.not-mobile{
+    display: none;
+}
+
+/*Small screens*/
+@media (768px<width<1024px){
+    nav > div > img {
+        width: 12vw;
+    }
+    h1 {
+        font-size: 5rem;
+        text-align: left;
+    }
+    #hero {
+        align-items: flex-start;
+        width: 50vw;
+        margin-left: 2rem;
+    }
+
+    header{
+        background-image: url(./images/background-singup.png);
+        flex-direction: row;
+        justify-content: flex-start;   
+    }
+    #hero-screen {
+        position: relative;
+        right: -6rem;
+    }
+
+    #cta-header{
+    padding: 2rem 0;
+    }
+
+   #sign-up-button, #google-button {
+    width: 50vw;
+    }
+
+    .ivory {
+        align-items: center;
+    }
+
+    .not-mobile{
+        display: inline;
+    }
+    .mobile, .fa-arrow-right-long{
+        display: none;
+    }
+    .screens-img {
+        width: 80vw;
+    }
+    .left-img{
+        align-self: flex-start;
+    }
+
+    .card {
+        width: 62vw;
+        padding: 2rem 0;
+    }
+
+    h2{
+        font-size: 2rem;
+    }
+    .card p {
+        line-height: 1.8;
+    }
+
+
+    .data div, .data ul {
+        flex-direction: row;
+    }
+    .data>p {
+        padding: 2rem 0 1.5rem 0;
+    }    
+    #meet-button, #talk-button{
+        width: max-content;
+        padding: 0 2rem;
+    }
+    .data ul {
+        align-items: flex-start;
+        gap: 8rem;
+    }
+
+    .data-info, .data span {
+        text-align: left;
+    }
+
+    .data-info {
+        font-size: 0.9rem;
+        padding: 0;
+    }
+
+    .data li {
+        align-items: flex-start;
+    }
+
+
+    .welcome h3 {
+        font-size: 2.5rem;
+    }
+
+    #try-button, #sales-button {
+        width: 80vw;
+    }
+
+
+    .sitemap ul {
+        max-width: 6rem;
+    }
+
+    .legal {
+        flex-direction: row;
+    }
+
+    .social{
+        justify-content: flex-start;
+    }
+}
