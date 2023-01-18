@@ -87,7 +87,7 @@ p b {
     padding: 2rem 1rem;
 }
 
-/*#cta-header*/ button {
+.button {
     width: 85vw;
     height: 50px;
     border-radius: 0.2rem;
@@ -349,7 +349,7 @@ footer hr{
 }
 
 .icons-footer img {
-    margin-right: 1rem;
+    margin-right: 0.5rem;
 }
 
 .social {
